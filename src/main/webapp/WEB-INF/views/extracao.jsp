@@ -36,14 +36,13 @@
 	</nav>
 
 	<div class="container">
-		<form action="/login.do" method="post">
-			<p>
-				<font color="red">${errorMessage}</font>
-			</p>
-			Name: <input type="text" name="name" /> Password:<input
-				type="password" name="password" /> <input type="submit"
-				value="Login" />
-		</form>
+
+		Your Service Orders are
+		<ol>
+			<c:forEach items="${serviceorders}" var="os">
+				<li>${os.SERVC_ORD_CD}&nbsp;</li>
+			</c:forEach>
+		</ol>
 
 	</div>
 

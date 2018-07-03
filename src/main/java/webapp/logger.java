@@ -3,12 +3,12 @@ package webapp;
 public class logger {
 
 		public static void trace(String strMensagem) {
-			System.console().printf(strMensagem);
+			System.out.println(strMensagem);
 		}
 		public static void warn(String strMensagem) {
-			System.console().printf(strMensagem);
+			System.out.println(strMensagem);
 		}
 		public static void info(String strMensagem) {
-			System.console().printf(strMensagem);
+			System.out.println(strMensagem);
 		}
 }
